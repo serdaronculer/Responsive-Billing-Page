@@ -11,6 +11,11 @@ body {
   font-size: 14px;
 }
 
+.btn-border {
+  border: 1px solid #cbcbd9 !important;
+  border-radius: 8px !important;
+}
+
 .outer-layer {
   display: flex;
   justify-content: center;
@@ -76,6 +81,46 @@ aside .side-body .link-item a.active::before {
 }
 aside .side-body .link-item a img {
   min-width: 32px;
+}
+
+main {
+  background: linear-gradient(304.24deg, #f8f8ff 0%, #ffffff 86.71%);
+  box-shadow: 0px 49px 32px -19px rgba(56, 56, 150, 0.15);
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  height: auto;
+}
+main table {
+  width: 100%;
+}
+main table td,
+main table th {
+  padding: 15px 15px 15px 0;
+  text-align: left;
+  font-weight: 500;
+}
+main table thead tr th {
+  color: #62618F;
+}
+main table tbody tr:hover {
+  background: #ffffff;
+  box-shadow: 0px 8px 19px rgba(223, 223, 253, 0.6);
+  border-radius: 100%;
+}
+main table tbody tr:hover a {
+  transform: translateX(10px);
+}
+main table tbody tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main table tbody tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main table tbody tr td a {
+  transition: 0.6s transform ease;
+  min-width: 75%;
 }
 
 /*# sourceMappingURL=style.css.map */
