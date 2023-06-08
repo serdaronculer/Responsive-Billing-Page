@@ -122,5 +122,14 @@ main table tbody tr td a {
   transition: 0.6s transform ease;
   min-width: 75%;
 }
+main .payment-method-wrapper span {
+  font-weight: 500;
+}
+main .payment-method-wrapper a {
+  margin-left: auto;
+}
+main .payment-method-wrapper img {
+  max-width: 64px;
+}
 
 /*# sourceMappingURL=style.css.map */

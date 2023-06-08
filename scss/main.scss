@@ -150,4 +150,18 @@ main {
       }
     }
   }
+
+  .payment-method-wrapper {
+    span {
+      font-weight: 500;
+    }
+
+    a {
+      margin-left: auto;
+    }
+
+    img {
+      max-width: 64px;
+    }
+  }
 }
