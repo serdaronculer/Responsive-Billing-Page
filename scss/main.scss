@@ -164,4 +164,19 @@ main {
       max-width: 64px;
     }
   }
+
+  .plan-wrapper {
+    background-color: $mandarin-red;
+    max-width: 258px;
+    display: flex;
+    min-height: 221px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+
+    a {
+      border: 1px solid #ffffff80;
+      border-radius: 8px !important;
+    }
+  }
 }
