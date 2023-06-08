@@ -28,6 +28,7 @@ Normalize.css reset.css'e göre daha az müdahalecidir. Reset.css tarayıcılard
 ## VARYANT-2
 
 [Canlı Önizleme](https://responsive-billing-page-v2.vercel.app/)
+
 [Repository](https://github.com/serdaronculer/Responsive-Billing-Page-V2)
 
 
