@@ -1,3 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+html,
+body {
+  background-color: #e8e8fd;
+  font-family: "Poppins", sans-serif !important;
+}
 
+.text-desc {
+  color: #62618f;
+  font-weight: normal !important;
+  font-size: 14px;
+}
+
+.outer-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer-layer .card-wrapper {
+  position: relative;
+  z-index: 0;
+}
+.outer-layer .card-wrapper::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+  width: 276px;
+  background-color: #EE4D38;
+  border-radius: 46px;
+  z-index: -999;
+}
+
+aside {
+  background-color: #f8f8ff;
+  border-top-left-radius: 1.875rem;
+  border-bottom-left-radius: 1.875rem;
+  position: relative;
+}
+aside .side-header img {
+  min-width: 40px;
+}
+aside .side-body .link-item {
+  width: 100%;
+}
+aside .side-body .link-item:last-child {
+  margin-top: auto;
+  position: absolute;
+  bottom: 10px;
+}
+aside .side-body .link-item a {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+  transition: 0.3s all ease;
+}
+aside .side-body .link-item a.active {
+  padding-left: 20px;
+}
+aside .side-body .link-item a.active img,
+aside .side-body .link-item a.active span:last-child {
+  transition: 0.3s all ease;
+  filter: brightness(0) saturate(100%) invert(7%) sepia(76%) saturate(2488%) hue-rotate(234deg) brightness(99%) contrast(97%);
+}
+aside .side-body .link-item a.active::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 80%;
+  background-color: red !important;
+  left: -5px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+aside .side-body .link-item a img {
+  min-width: 32px;
+}
 
 /*# sourceMappingURL=style.css.map */
