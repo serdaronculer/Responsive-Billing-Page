@@ -108,6 +108,62 @@ main {
   border-bottom-right-radius: 32px;
   height: auto;
 
+  .toggle-wrapper {
+    display: none;
+
+    .toggle {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+
+      &.active {
+        span {
+          &:nth-child(1) {
+            width: 40px;
+            transform: translateY(0px) rotate(45deg);
+            transition-delay: 0.125s;
+          }
+
+          &:nth-child(2) {
+            width: 40px;
+            transform: translateY(0px) rotate(315deg);
+            transition-delay: 0.25s;
+          }
+
+          &:nth-child(3) {
+            transform: translateX(60px);
+          }
+        }
+      }
+
+      span {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background-color: #adadff;
+        border-radius: 4px;
+        transition: 0.5s transform ease;
+
+        &:nth-child(1) {
+          transform: translateY(-15px);
+          width: 25px;
+          left: 15px;
+        }
+        &:nth-child(2) {
+          transform: translateY(15px);
+          width: 15px;
+          left: 15px;
+        }
+      }
+    }
+  }
+
   table {
     width: 100%;
 
@@ -249,7 +305,6 @@ main {
           box-shadow: 11px 0px 26px -7px rgba(219, 219, 219, 1);
         }
 
-       
         .side-header {
           justify-content: flex-start;
           img {
@@ -278,6 +333,11 @@ main {
       main {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+
+        .toggle-wrapper {
+          display: flex;
+          justify-content: flex-end;
+        }
       }
     }
   }

@@ -1,4 +1,18 @@
+let menuToggle = document.querySelector(".toggle");
+let aside = document.querySelector("aside");
 let links = document.querySelectorAll("a");
+
+
+for (let i = 0; i < 3; i++) {
+    let spanElement = document.createElement('span');
+    menuToggle.appendChild(spanElement);
+}
+menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    aside.classList.toggle("active");
+})
+
+
 
 links.forEach(item => {
     item.addEventListener('click', (e) => {
@@ -9,3 +23,4 @@ links.forEach(item => {
         }
     });
 });
+
